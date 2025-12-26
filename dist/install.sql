@@ -14,6 +14,7 @@
 
 -- Kick off Liquibase
 prompt "Installing/updating schemas"
+
 lb update -log -changelog-file releases/main.changelog.xml -search-path "." -defaults-file utils/liquibase-rc-to-sit.properties
 
 --@utils/recompile.sql
